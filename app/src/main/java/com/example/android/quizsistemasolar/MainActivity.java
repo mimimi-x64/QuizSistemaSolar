@@ -22,17 +22,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-    * Radio Questions 1, 4, 5 and 6
-    * */
+     * Radio Questions 1, 4, 5 and 6
+     */
     public void askRadioButton() {
 
         //Answer for Question 1
         RadioButton answer1_ask1 = findViewById(R.id.answer1_ask1);
-        boolean banswer1_ask1 = answer1_ask1.isChecked();
+        boolean banswer1_ask1 = answer1_ask1.isChecked( );
         RadioButton answer2_ask1 = findViewById(R.id.answer2_ask1);
-        boolean banswer2_ask1 = answer2_ask1.isChecked();
+        boolean banswer2_ask1 = answer2_ask1.isChecked( );
         RadioButton answer3_ask1 = findViewById(R.id.answer3_ask1);
-        boolean banswer3_ask1 = answer3_ask1.isChecked();
+        boolean banswer3_ask1 = answer3_ask1.isChecked( );
 
         if (banswer1_ask1) score += 1;
         if (banswer2_ask1) score -= 1;
@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
         //Answer for Question 4
         RadioButton answer1_ask4 = findViewById(R.id.answer1_ask4);
-        boolean banswer1_ask4 = answer1_ask4.isChecked();
+        boolean banswer1_ask4 = answer1_ask4.isChecked( );
         RadioButton answer2_ask4 = findViewById(R.id.answer2_ask4);
-        boolean banswer2_ask4 = answer2_ask4.isChecked();
+        boolean banswer2_ask4 = answer2_ask4.isChecked( );
         RadioButton answer3_ask4 = findViewById(R.id.answer3_ask4);
-        boolean banswer3_ask4 = answer3_ask4.isChecked();
+        boolean banswer3_ask4 = answer3_ask4.isChecked( );
 
         if (banswer1_ask4) score += 1;
         if (banswer2_ask4) score -= 1;
@@ -52,18 +52,18 @@ public class MainActivity extends AppCompatActivity {
 
         //Answer for Question 5
         RadioButton answer1_ask5 = findViewById(R.id.answer1_ask5);
-        boolean banswer1_ask5 = answer1_ask5.isChecked();
+        boolean banswer1_ask5 = answer1_ask5.isChecked( );
         RadioButton answer2_ask5 = findViewById(R.id.answer2_ask5);
-        boolean banswer2_ask5 = answer2_ask5.isChecked();
+        boolean banswer2_ask5 = answer2_ask5.isChecked( );
 
         if (banswer1_ask5) score += 1;
         if (banswer2_ask5) score -= 1;
 
         //Answer for Question 6
         RadioButton answer1_ask6 = findViewById(R.id.answer1_ask6);
-        boolean banswer1_ask6 = answer1_ask6.isChecked();
+        boolean banswer1_ask6 = answer1_ask6.isChecked( );
         RadioButton answer2_ask6 = findViewById(R.id.answer2_ask6);
-        boolean banswer2_ask6 = answer2_ask6.isChecked();
+        boolean banswer2_ask6 = answer2_ask6.isChecked( );
 
 
         if (banswer1_ask6) score += 1;
@@ -72,16 +72,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-    * CheckBox Question 2
-    * */
-    public void askCheckBox(){
+     * CheckBox Question 2
+     */
+    public void askCheckBox() {
         CheckBox checkAnswer1 = findViewById(R.id.answer1_ask2);
         CheckBox checkAnswer2 = findViewById(R.id.answer2_ask2);
         CheckBox checkAnswer3 = findViewById(R.id.answer3_ask2);
 
-        boolean checked1 = checkAnswer1.isChecked();
-        boolean checked2 = checkAnswer2.isChecked();
-        boolean checked3 = checkAnswer3.isChecked();
+        boolean checked1 = checkAnswer1.isChecked( );
+        boolean checked2 = checkAnswer2.isChecked( );
+        boolean checked3 = checkAnswer3.isChecked( );
 
         if (checked1) score -= 1;
         if (checked2) score += 0.5;
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * EditBox Question 3
-     * */
+     */
     public void askEditBox() {
         EditText answer = findViewById(R.id.answer1_ask3);
         userAnswer = String.valueOf(answer.getText( ));
@@ -111,20 +111,24 @@ public class MainActivity extends AppCompatActivity {
 
     public void rate( View view ) {
         // Call and Calc score
-        askEditBox();
-        askCheckBox();
-        askRadioButton();
+        askEditBox( );
+        askCheckBox( );
+        askRadioButton( );
 
-        if (score > 5.9) Toast.makeText(this, (getString(R.string.maxScore)), Toast.LENGTH_SHORT).show();
-        else Toast.makeText(this, (getString(R.string.minScore)), Toast.LENGTH_SHORT).show();
+        if (score > 5.9)
+            Toast.makeText(this, (getString(R.string.maxScore)), Toast.LENGTH_SHORT).show( );
+        else Toast.makeText(this, (getString(R.string.minScore)), Toast.LENGTH_SHORT).show( );
 
         //Retuns to 0 score value
         score = 0;
     }
 
     public void noCreator( View view ) {
-        Toast.makeText(this, (getString(R.string.noCreator)), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, (getString(R.string.noCreator)), Toast.LENGTH_SHORT).show( );
     }
+
+
+}
 
     /**
      *
