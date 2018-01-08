@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <string name="title">Sistema Solar</string>
+
+    <!--Questions-->
+    <string name="ask1">Quantos planetas existem?</string>
+    <string name="ask2">Marque os nome dos planetas que estão corretos.</string>
+    <string name="ask3">O nome da nossa Galáxia é… </string>
+    <string name="ask4">O que é o Sol?</string>
+    <string name="ask5">Buracos Negros existem mesmo?</string>
+    <string name="ask6">Você acredita que existe um criador?</string>
+
+    <!--Answers-->
+    <string name="answer1_ask1">8</string>
+    <string name="answer2_ask1">5</string>
+    <string name="answer3_ask1">12</string>
+
+    <string name="answer1_ask2">Juniper</string>
+    <string name="answer2_ask2">Jupiter</string>
+    <string name="answer3_ask2">Plutão</string>
+
+    <string name="answer1_ask3_hint">Via...</string>
+
+    <string name="answer1_ask4">Estrela</string>
+    <string name="answer2_ask4">Meteoro</string>
+    <string name="answer3_ask4">Planeta</string>
+
+    <string name="answer1_ask5">Sim</string>
+    <string name="answer2_ask5">Não</string>
+
+    <string name="answer1_ask6">Sim</string>
+    <string name="answer2_ask6">Não</string>
+
+    <!--Adicional -->
+    <string name="maxScore">Parabéns, você tirou a pontuação máxima! </string>
+    <string name="minScore">Você precisa estudar mais...</string>
+    <string name="noCreator">Pequise por Criador no JW.org</string>
+</resources>
