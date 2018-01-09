@@ -1,5 +1,7 @@
 package com.example.android.quizsistemasolar;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -125,6 +127,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void noCreator( View view ) {
         Toast.makeText(this, (getString(R.string.noCreator)), Toast.LENGTH_SHORT).show( );
+
+        Uri webpage = Uri.parse("https://www.jw.org/pt/publicacoes/livros/vida-teve-criador/");
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
 
