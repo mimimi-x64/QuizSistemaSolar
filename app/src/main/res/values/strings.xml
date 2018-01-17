@@ -12,28 +12,32 @@
     <string name="ask6">Você acredita que existe um criador?</string>
 
     <!--Answers-->
-    <string name="answer1_ask1">8</string>
-    <string name="answer2_ask1">5</string>
-    <string name="answer3_ask1">12</string>
+    <string name="answer1Ask1">8</string>
+    <string name="answer2Ask1">5</string>
+    <string name="answer3Ask1">12</string>
 
-    <string name="answer1_ask2">Juniper</string>
-    <string name="answer2_ask2">Jupiter</string>
-    <string name="answer3_ask2">Plutão</string>
+    <string name="answer1Ask2">Juniper</string>
+    <string name="answer2Ask2">Jupiter</string>
+    <string name="answer3Ask2">Marte</string>
 
-    <string name="answer1_ask3_hint">Via...</string>
+    <string name="answer1Ask3_hint">Via...</string>
 
-    <string name="answer1_ask4">Estrela</string>
-    <string name="answer2_ask4">Meteoro</string>
-    <string name="answer3_ask4">Planeta</string>
+    <string name="answer1Ask4">Estrela</string>
+    <string name="answer2Ask4">Meteoro</string>
+    <string name="answer3Ask4">Planeta</string>
 
-    <string name="answer1_ask5">Sim</string>
-    <string name="answer2_ask5">Não</string>
+    <string name="answer1Ask5">Sim</string>
+    <string name="answer2Ask5">Não</string>
 
-    <string name="answer1_ask6">Sim</string>
-    <string name="answer2_ask6">Não</string>
+    <string name="answer1Ask6">Sim</string>
+    <string name="answer2Ask6">Não</string>
 
     <!--Adicional -->
+    <string name="minScore">Verifique suas respostas</string>
+    <string name="scoreEquals1">Você acertou uma questão</string>
+    <string name="scoreEquals2">Você acertou duas questões</string>
+    <string name="scoreEquals3">Você acertou três questões</string>
+    <string name="scoreEquals4">Você acertou três questões</string>
     <string name="maxScore">Parabéns, você tirou a pontuação máxima! </string>
-    <string name="minScore">Você precisa estudar mais...</string>
     <string name="noCreator">Quero te mostrar uma coisa</string>
 </resources>
